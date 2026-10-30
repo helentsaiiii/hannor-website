@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hannor Consulting — Talent search for Taiwan's semiconductor &amp; hi-tech industry. Inspired by the ocean, dedicated to talent." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <title>Hannor Consulting | Inspired by the ocean, dedicated to talent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top" aria-label="Hannor Consulting home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span class="wordmark-text">
+          <strong>Hannor</strong>
+          <span class="wordmark-sub">Consulting</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#spirit" data-i18n="nav.spirit">Name</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#domains" data-i18n="nav.domains">Domains</a></li>
+          <li><a href="#process" data-i18n="nav.process">How we work</a></li>
+          <li><a href="#setup-flow" data-i18n="nav.setup">Set up</a></li>
+          <li><a href="#clients" data-i18n="nav.clients">Clients</a></li>
+          <li><a href="#team" data-i18n="nav.team">Team</a></li>
+          <li><a class="nav-cta" href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">繁中</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero — PDF cover -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <img class="hero-mark" src="assets/logo-h.svg" width="110" height="138" alt="" />
+        <div class="hero-divider" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Company Introduction · 2026</p>
+          <h1 id="hero-title">Hannor Consulting</h1>
+          <p class="hero-tagline" data-i18n="hero.tagline">Inspired by the ocean, dedicated to talent.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">Start a discovery call</a>
+            <a class="btn btn-ghost" href="#services" data-i18n="hero.cta2">Explore services</a>
+          </div>
+          <p class="hero-lead" data-i18n="hero.lead">Talent search for Taiwan’s semiconductor &amp; hi-tech industry</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Name spirit -->
+    <section class="section section-spirit" id="spirit" aria-labelledby="spirit-title">
+      <p class="corner-brand" aria-hidden="true">Hannor Consulting</p>
+      <div class="container narrow">
+        <p class="section-label" data-i18n="spirit.label">The spirit behind our name</p>
+        <h2 id="spirit-title" class="spirit-title">
+          <span class="spirit-en">Hannor</span>
+          <span class="spirit-zh" lang="zh-Hant">海納百川</span>
+        </h2>
+        <blockquote class="spirit-quote">
+          <p data-i18n="spirit.quote">“The ocean remains vast because it welcomes every river.”</p>
+        </blockquote>
+        <hr class="spirit-rule" />
+        <p class="spirit-body" data-i18n="spirit.body">Just as the ocean gathers diverse streams, Hannor brings top-tier talent into the right corporate currents, driving growth for both the people and the companies we serve.</p>
+        <p class="spirit-sign">— Hannor Team</p>
+      </div>
+    </section>
+
+    <!-- Services — MAP / HIRE / PAY / SET UP -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <p class="corner-brand" aria-hidden="true">Hannor Consulting</p>
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label" data-i18n="services.label">Our services</p>
+          <h2 id="services-title" data-i18n="services.title">From talent map to first payday, end to end</h2>
+        </header>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-head">
+              <p class="service-num" aria-hidden="true">01</p>
+              <p class="service-pillar">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 12V4l4-2 4 2v8l-4 2-4-2z" stroke="currentColor" stroke-width="1.2"/><path d="M6 6v6M2 4l4 2 4-2" stroke="currentColor" stroke-width="1.2"/></svg>
+                <span data-i18n="services.s1.pillar">MAP</span>
+              </p>
+              <h3 data-i18n="services.s1.title">Talent Mapping</h3>
+            </div>
+            <div class="service-body">
+              <ul>
+                <li data-i18n="services.s1.a">Target company and competitor mapping</li>
+                <li data-i18n="services.s1.b">Team structure and talent pool insight</li>
+                <li data-i18n="services.s1.c">Data-driven hiring strategy</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card is-core">
+            <div class="service-head">
+              <p class="service-num" aria-hidden="true">02</p>
+              <p class="service-pillar">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4" stroke="currentColor" stroke-width="1.2"/><path d="M10 10l3.5 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                <span data-i18n="services.s2.pillar">HIRE</span>
+                <span class="core-pill" data-i18n="services.s2.badge">CORE</span>
+              </p>
+              <h3 data-i18n="services.s2.title">Recruitment &amp; Interview</h3>
+            </div>
+            <div class="service-body">
+              <ul>
+                <li data-i18n="services.s2.a">Talent search</li>
+                <li data-i18n="services.s2.b">Candidate screening and qualification</li>
+                <li data-i18n="services.s2.c">Interview arrangement and feedback</li>
+                <li data-i18n="services.s2.d">Offer letter negotiation</li>
+                <li data-i18n="services.s2.e">Candidate onboarding support</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-head">
+              <p class="service-num" aria-hidden="true">03</p>
+              <p class="service-pillar">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.2"/><path d="M8 3.5v9M3.5 8h9" stroke="currentColor" stroke-width="1.2"/></svg>
+                <span data-i18n="services.s3.pillar">PAY</span>
+              </p>
+              <h3 data-i18n="services.s3.title">Payroll &amp; EOR</h3>
+            </div>
+            <div class="service-body">
+              <ul>
+                <li data-i18n="services.s3.a">Employer of Record (EOR) services</li>
+                <li data-i18n="services.s3.b">Local salary payment in Taiwan for overseas companies</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-head">
+              <p class="service-num" aria-hidden="true">04</p>
+              <p class="service-pillar">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="2.5" stroke="currentColor" stroke-width="1.2"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.2 3.2l1.4 1.4M11.4 11.4l1.4 1.4M3.2 12.8l1.4-1.4M11.4 4.6l1.4-1.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                <span data-i18n="services.s4.pillar">SET UP</span>
+              </p>
+              <h3 data-i18n="services.s4.title">One-Stop Admin Support</h3>
+            </div>
+            <div class="service-body">
+              <ul>
+                <li data-i18n="services.s4.a">Taiwan setup for overseas companies</li>
+                <li data-i18n="services.s4.b">Business registration</li>
+                <li data-i18n="services.s4.c">Payroll administration</li>
+                <li data-i18n="services.s4.d">Company policies and regulations</li>
+                <li data-i18n="services.s4.e">Legal support, tailored to your needs</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Domains -->
+    <section class="section" id="domains" aria-labelledby="domains-title">
+      <p class="corner-brand" aria-hidden="true">Hannor Consulting</p>
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label" data-i18n="domains.label">Domain</p>
+          <h2 id="domains-title" data-i18n="domains.title">Where we specialize</h2>
+        </header>
+        <div class="domains-grid">
+          <div class="domain-panel">
+            <h3 data-i18n="domains.industry">Industry</h3>
+            <ul class="domain-list">
+              <li><span>01</span> IC Design</li>
+              <li><span>02</span> Wafer / Foundry / OSAT</li>
+              <li><span>03</span> OEM / ODM / OBM</li>
+              <li><span>04</span> AI / Cloud / Edge Computing</li>
+              <li><span>05</span> IT / SAP / Infra / SaaS / PaaS</li>
+              <li><span>06</span> Manufacturing</li>
+              <li><span>07</span> Construction</li>
+            </ul>
+          </div>
+          <div class="domain-panel">
+            <h3 data-i18n="domains.function">Function</h3>
+            <ul class="domain-list">
+              <li><span>01</span> R&amp;D</li>
+              <li><span>02</span> Sales</li>
+              <li><span>03</span> Supply Chain / Procurement</li>
+              <li><span>04</span> Product / Project Management</li>
+              <li><span>05</span> Back Office</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- How we work -->
+    <section class="section section-alt" id="process" aria-labelledby="process-title">
+      <p class="corner-brand" aria-hidden="true">Hannor Consulting</p>
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label" data-i18n="process.label">How we work</p>
+          <h2 id="process-title" data-i18n="process.title">From first brief to first day</h2>
+        </header>
+        <ol class="process-timeline">
+          <li class="process-step">
+            <div class="process-meta">
+              <span class="process-time" data-i18n="process.t1.time">1 session</span>
+              <span class="process-dot" aria-hidden="true"></span>
+            </div>
+            <h3 data-i18n="process.t1.title">Discovery call</h3>
+            <p data-i18n="process.t1.body">We align on the role, team, must-haves and salary range.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-meta">
+              <span class="process-time" data-i18n="process.t2.time">7–14 days</span>
+              <span class="process-dot" aria-hidden="true"></span>
+            </div>
+            <h3 data-i18n="process.t2.title">Shortlist delivered</h3>
+            <p data-i18n="process.t2.body">Screened candidate CVs, each with consultant notes.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-meta">
+              <span class="process-time" data-i18n="process.t3.time">2–3 weeks</span>
+              <span class="process-dot" aria-hidden="true"></span>
+            </div>
+            <h3 data-i18n="process.t3.title">Interviews</h3>
+            <p data-i18n="process.t3.body">We schedule, prepare both sides and gather feedback.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-meta">
+              <span class="process-time" data-i18n="process.t4.time">Close</span>
+              <span class="process-dot" aria-hidden="true"></span>
+            </div>
+            <h3 data-i18n="process.t4.title">Offer</h3>
+            <p data-i18n="process.t4.body">We guide the offer and negotiation to a yes.</p>
+          </li>
+          <li class="process-step">
+            <div class="process-meta">
+              <span class="process-time" data-i18n="process.t5.time">Day 1</span>
+              <span class="process-dot" aria-hidden="true"></span>
+            </div>
+            <h3 data-i18n="process.t5.title">Onboarding</h3>
+            <p data-i18n="process.t5.body">We stay in touch through the guarantee period.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SET UP collaboration flow -->
+    <section class="section" id="setup-flow" aria-labelledby="setup-title">
+      <p class="corner-brand" aria-hidden="true">Hannor Consulting</p>
+      <div class="container">
+        <header class="section-header setup-header">
+          <p class="section-label" data-i18n="setup.label">One-Stop Admin Support</p>
+          <h2 id="setup-title" data-i18n="setup.title">SET UP collaboration flow</h2>
+          <p class="section-lead setup-tagline" data-i18n="setup.tagline">From your first Taiwan office to the first local paycheck…</p>
+        </header>
+
+        <ol class="setup-timeline">
+          <li class="setup-step">
+            <div class="setup-index" aria-hidden="true"><span>0</span></div>
+            <div class="setup-card">
+              <p class="setup-phase" data-i18n="setup.s0.phase">Intake</p>
+              <h3 data-i18n="setup.s0.title">Intake call</h3>
+              <p data-i18n="setup.s0.body">Clarify goals, entity options, headcount timing and constraints — then a Taiwan landing scope one-pager.</p>
+            </div>
+          </li>
+          <li class="setup-step">
+            <div class="setup-index" aria-hidden="true"><span>1</span></div>
+            <div class="setup-card">
+              <p class="setup-phase" data-i18n="setup.s1.phase">Blueprint</p>
+              <h3 data-i18n="setup.s1.title">Diagnostic workshop</h3>
+              <p data-i18n="setup.s1.body">A structured session that produces a landing blueprint and a clear RACI across client, Hannor and local partners.</p>
+            </div>
+          </li>
+          <li class="setup-step">
+            <div class="setup-index" aria-hidden="true"><span>2</span></div>
+            <div class="setup-card">
+              <p class="setup-phase" data-i18n="setup.s2.phase">Registration</p>
+              <h3 data-i18n="setup.s2.title">Registration sprint</h3>
+              <p data-i18n="setup.s2.body">Name check → document pack → filing → approval and tax ID — coordinated with your counsel where required.</p>
+            </div>
+          </li>
+          <li class="setup-step">
+            <div class="setup-index" aria-hidden="true"><span>3</span></div>
+            <div class="setup-card">
+              <p class="setup-phase" data-i18n="setup.s3.phase">Compliance</p>
+              <h3 data-i18n="setup.s3.title">Policies &amp; compliance base</h3>
+              <p data-i18n="setup.s3.body">Core policies and regulatory housekeeping ready before the first joiners arrive.</p>
+            </div>
+          </li>
+          <li class="setup-step">
+            <div class="setup-index" aria-hidden="true"><span>4</span></div>
+            <div class="setup-card">
+              <p class="setup-phase" data-i18n="setup.s4.phase">Payroll</p>
+              <h3 data-i18n="setup.s4.title">Payroll go-live / EOR bridge</h3>
+              <p data-i18n="setup.s4.body">Local payroll or EOR bridge timed with hiring onboarding so day-one pay is covered.</p>
+            </div>
+          </li>
+          <li class="setup-step is-last">
+            <div class="setup-index" aria-hidden="true"><span>5</span></div>
+            <div class="setup-card">
+              <p class="setup-phase" data-i18n="setup.s5.phase">Handoff</p>
+              <h3 data-i18n="setup.s5.title">Stabilize &amp; handoff</h3>
+              <p data-i18n="setup.s5.body">Steady-state support through 1–3 payroll cycles, then a clean handoff — with a re-start window if you need us again.</p>
+            </div>
+          </li>
+        </ol>
+
+        <aside class="setup-pair" aria-labelledby="setup-pair-title">
+          <h3 id="setup-pair-title" data-i18n="setup.pair.title">How SET UP pairs with Map / Hire / Pay</h3>
+          <ul>
+            <li data-i18n="setup.pair.a"><strong>Map</strong> — talent landscape and headcount plan inform which entity path and admin load you need.</li>
+            <li data-i18n="setup.pair.b"><strong>Hire</strong> — registration and policies stay ahead of offer dates so candidates can start on schedule.</li>
+            <li data-i18n="setup.pair.c"><strong>Pay</strong> — EOR or local payroll plugs in when the entity is ready, or bridges until it is.</li>
+          </ul>
+          <p class="setup-disclaimer" data-i18n="setup.disclaimer">Scope and timelines depend on your case and local requirements; formal filings and legal opinions are handled with qualified counsel as needed — this overview is not a legal guarantee.</p>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- Clients & track record (slim — stats + engagements; no logo grid) -->
+    <section class="section" id="clients" aria-labelledby="clients-title">
+      <p class="corner-brand" aria-hidden="true">Hannor Consulting</p>
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label" data-i18n="clients.label">Track record</p>
+          <h2 id="clients-title" data-i18n="clients.title">Results that speak for us</h2>
+          <p class="section-lead" data-i18n="clients.lead">Selected outcomes across Taiwan’s semiconductor and hi-tech hiring.</p>
+        </header>
+
+        <div class="track-block" id="track">
+          <div class="stats-row">
+            <div class="stat">
+              <p class="stat-num">8+</p>
+              <p class="stat-label" data-i18n="track.s4">Taiwan Top 50 tech</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">10+</p>
+              <p class="stat-label" data-i18n="track.s1">Countries our clients come from</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">50+</p>
+              <p class="stat-label" data-i18n="track.s2">Multinationals, startups and local companies served</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">200+</p>
+              <p class="stat-label" data-i18n="track.s3">Placements, from engineers to C-level</p>
+            </div>
+          </div>
+
+          <h3 class="engagements-title" data-i18n="track.eng">Selected engagements</h3>
+          <ul class="engagements">
+            <li>
+              <div>
+                <strong data-i18n="track.e1.who">Israeli IC design house</strong>
+                <span data-i18n="track.e1.what">Their first TPM in Taiwan</span>
+              </div>
+              <span class="engagement-time" data-i18n="track.e1.when">2 months</span>
+            </li>
+            <li>
+              <div>
+                <strong data-i18n="track.e2.who">Dutch semiconductor equipment maker</strong>
+                <span data-i18n="track.e2.what">Built the Application/Service team</span>
+              </div>
+              <span class="engagement-time" data-i18n="track.e2.when">3–6 months</span>
+            </li>
+            <li>
+              <div>
+                <strong data-i18n="track.e3.who">Japanese IC design house</strong>
+                <span data-i18n="track.e3.what">Built the SCM, Sales and R&amp;D teams</span>
+              </div>
+              <span class="engagement-time" data-i18n="track.e3.when">3 teams</span>
+            </li>
+            <li>
+              <div>
+                <strong data-i18n="track.e4.who">UK semiconductor equipment maker</strong>
+                <span data-i18n="track.e4.what">Application/Service hires</span>
+              </div>
+              <span class="engagement-time" data-i18n="track.e4.when">3 months</span>
+            </li>
+          </ul>
+          <p class="track-note" data-i18n="track.note">“Taiwan Top 50 tech” highlights our focus on Taiwan’s leading technology groups; selected named references appear in our company introduction.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="team" aria-labelledby="team-title">
+      <p class="corner-brand" aria-hidden="true">Hannor Consulting</p>
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label" data-i18n="team.label">Our people</p>
+          <h2 id="team-title" data-i18n="team.title">Meet the founder</h2>
+        </header>
+
+        <article class="founder-card">
+          <div class="founder-avatar" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none">
+              <circle cx="60" cy="60" r="58" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+              <circle cx="60" cy="48" r="18" stroke="currentColor" stroke-width="2"/>
+              <path d="M28 98c6-18 18-28 32-28s26 10 32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="founder-body">
+            <h3>Helen Tsai</h3>
+            <p class="founder-role" data-i18n="team.helen.role">Founder &amp; Managing Consultant</p>
+            <p class="founder-link">
+              <a href="https://www.linkedin.com/in/helen-tsai-6037571a8" target="_blank" rel="noopener noreferrer">linkedin.com/in/helen-tsai-6037571a8</a>
+            </p>
+            <p data-i18n="team.helen.bio">Helen works as a talent advisor, helping global tech companies land and grow in Taiwan, from their first local hire to full engineering and sales teams.</p>
+            <blockquote class="founder-quote">
+              <p data-i18n="team.helen.quote">“I treat every client with sincerity, as a true partner, building wins for the company, the candidate and the long-term relationship.”</p>
+            </blockquote>
+            <ul class="founder-tags">
+              <li data-i18n="team.helen.t1">7+ years in executive search</li>
+              <li data-i18n="team.helen.t2">Semiconductor &amp; tech</li>
+              <li data-i18n="team.helen.t3">Market advisory</li>
+              <li data-i18n="team.helen.t4">Recruitment strategy</li>
+            </ul>
+          </div>
+        </article>
+
+        <h3 class="core-heading" data-i18n="team.core">Core members</h3>
+        <div class="core-grid">
+          <article class="core-card">
+            <p class="core-badge" data-i18n="team.c1.badge">Leadership</p>
+            <h4 data-i18n="team.c1.title">Head of Consulting</h4>
+            <ul>
+              <li data-i18n="team.c1.a">Strategic talent partner for multinational hi-tech groups</li>
+              <li data-i18n="team.c1.b">7+ years dedicated to hi-tech executive search</li>
+            </ul>
+          </article>
+          <article class="core-card">
+            <p class="core-badge" data-i18n="team.c2.badge">Semiconductor</p>
+            <h4 data-i18n="team.c2.title">Senior Consulting Manager</h4>
+            <ul>
+              <li data-i18n="team.c2.a">Built and scaled a specialized semiconductor business unit</li>
+              <li data-i18n="team.c2.b">Led 5 consultants in high-end R&amp;D and engineering search</li>
+            </ul>
+          </article>
+          <article class="core-card">
+            <p class="core-badge" data-i18n="team.c3.badge">Software</p>
+            <h4 data-i18n="team.c3.title">Senior Consulting Manager</h4>
+            <ul>
+              <li data-i18n="team.c3.a">7+ years dedicated to software talent</li>
+              <li data-i18n="team.c3.b">Previously led 15+ consultants delivering high-standard search</li>
+            </ul>
+          </article>
+          <article class="core-card">
+            <p class="core-badge" data-i18n="team.c4.badge">Technical advisory</p>
+            <h4 data-i18n="team.c4.title">Professional Consultant</h4>
+            <ul>
+              <li data-i18n="team.c4.a">7 years of hands-on experience as an R&amp;D engineer</li>
+              <li data-i18n="team.c4.b">Technical insight and advisory for engineering roles</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-vline" aria-hidden="true"></div>
+          <div class="contact-copy">
+            <h2 id="contact-title" data-i18n="contact.thanks">Thank you</h2>
+            <p class="contact-brand">Hannor Consulting</p>
+            <p class="contact-person">Helen Tsai <span aria-hidden="true">|</span> <span data-i18n="contact.role">Founder &amp; Managing Consultant</span></p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-k" data-i18n="contact.mail">Mail</span>
+                <a href="mailto:helen.tsai@hannortw.com">helen.tsai@hannortw.com</a>
+              </li>
+              <li>
+                <span class="contact-k" data-i18n="contact.phone">Phone</span>
+                <a href="tel:+886939250220">+886 939250220</a>
+              </li>
+              <li>
+                <span class="contact-k">WhatsApp</span>
+                <a href="https://wa.me/886939250220" target="_blank" rel="noopener noreferrer">+886 939250220</a>
+              </li>
+              <li>
+                <span class="contact-k">Line</span>
+                <a href="https://line.me/ti/p/suu0918" target="_blank" rel="noopener noreferrer">suu0918</a>
+              </li>
+            </ul>
+            <p class="contact-tagline" data-i18n="hero.tagline">Inspired by the ocean, dedicated to talent.</p>
+            <a class="btn btn-light" href="mailto:helen.tsai@hannortw.com" data-i18n="contact.cta">Email Helen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Hannor</strong> Consulting</p>
+      <p class="footer-copy">&copy; 2026 Hannor Consulting. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <a class="back-top" href="#top" data-i18n="footer.top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
