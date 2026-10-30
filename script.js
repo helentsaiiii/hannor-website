@@ -320,8 +320,13 @@
     });
   });
 
-  // Always open in English for international clients; 繁中 still available via toggle
-  applyLang("en");
+  // Default: English for international clients; Traditional Chinese if browser is zh*
+  var startLang = "en";
+  try {
+    var navLang = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    if (String(navLang).toLowerCase().indexOf("zh") === 0) startLang = "zh";
+  } catch (e) { /* ignore */ }
+  applyLang(startLang);
 
   // Sticky header shadow
   var header = document.querySelector(".site-header");
