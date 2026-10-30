@@ -348,28 +348,15 @@
     });
   }
 
-  // Contact form → mailto
+  // Contact form posts via FormSubmit → helen.tsai@hannortw.com (no mailto)
   var form = document.getElementById("contact-form");
   if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var first = (form.first_name && form.first_name.value || "").trim();
-      var last = (form.last_name && form.last_name.value || "").trim();
-      var email = (form.email && form.email.value || "").trim();
-      var company = (form.company && form.company.value || "").trim();
-      var need = (form.need && form.need.value || "").trim();
-      var message = (form.message && form.message.value || "").trim();
-      if (!email) return;
-      var subject = "Hannor website inquiry";
-      var body = [
-        "Name: " + [first, last].filter(Boolean).join(" "),
-        "Email: " + email,
-        "Company: " + company,
-        "Need: " + need,
-        "",
-        message
-      ].join("\n");
-      window.location.href = "mailto:helen.tsai@hannortw.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    form.addEventListener("submit", function () {
+      var btn = form.querySelector('[type="submit"]');
+      if (btn) {
+        btn.disabled = true;
+        btn.setAttribute("aria-busy", "true");
+      }
     });
   }
 
