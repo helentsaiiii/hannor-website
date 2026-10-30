@@ -311,6 +311,9 @@
       btn.setAttribute("aria-pressed", active ? "true" : "false");
     });
     try { localStorage.setItem("hannor-lang", lang); } catch (e) { /* ignore */ }
+    if (formStatus && formStatus.getAttribute("data-state")) {
+      formStatus.textContent = formStatusText(formStatus.getAttribute("data-state"), lang);
+    }
   }
 
   // Language toggle
@@ -353,15 +356,84 @@
     });
   }
 
-  // Contact form posts via FormSubmit → helen.tsai@hannortw.com (no mailto)
+  // Contact form posts via Web3Forms → helen.tsai@hannortw.com (stays on the page; no mailto)
   var form = document.getElementById("contact-form");
+  var formStatus = document.getElementById("contact-form-status");
+
+  function formStatusText(state, lang) {
+    var zh = lang === "zh";
+    if (state === "sending") return zh ? "送出中…" : "Sending…";
+    if (state === "success") {
+      return zh
+        ? "已收到，謝謝。我會在一個工作天內回覆你。"
+        : "Thanks — your message is on its way. I’ll reply within one business day.";
+    }
+    if (state === "error") {
+      return zh
+        ? "送出時發生問題，請改寄信到 helen.tsai@hannortw.com。"
+        : "Something went wrong. Please email helen.tsai@hannortw.com.";
+    }
+    return "";
+  }
+
+  function showFormStatus(state) {
+    if (!formStatus) return;
+    formStatus.setAttribute("data-state", state);
+    var lang = document.documentElement.lang.indexOf("zh") === 0 ? "zh" : "en";
+    formStatus.textContent = formStatusText(state, lang);
+    formStatus.hidden = !state;
+  }
+
   if (form) {
-    form.addEventListener("submit", function () {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
       var btn = form.querySelector('[type="submit"]');
       if (btn) {
         btn.disabled = true;
         btn.setAttribute("aria-busy", "true");
       }
+      showFormStatus("sending");
+
+      var data = new FormData(form);
+      var payload = {};
+      data.forEach(function (value, key) {
+        payload[key] = typeof value === "string" ? value : "";
+      });
+      if (!payload.botcheck) delete payload.botcheck;
+      var who = [payload.first_name, payload.last_name].map(function (part) {
+        return (part || "").trim();
+      }).filter(Boolean).join(" ");
+      payload.from_name = who || "Hannor website";
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+        .then(function (response) {
+          return response.json().then(function (body) {
+            return { ok: response.status === 200, body: body };
+          });
+        })
+        .then(function (result) {
+          if (!result.ok || !result.body || result.body.success !== true) {
+            throw new Error("submit failed");
+          }
+          form.reset();
+          showFormStatus("success");
+        })
+        .catch(function () {
+          showFormStatus("error");
+        })
+        .then(function () {
+          if (btn) {
+            btn.disabled = false;
+            btn.removeAttribute("aria-busy");
+          }
+        });
     });
   }
 
