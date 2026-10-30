@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="80" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8D5A3"/>
+      <stop offset="0.35" stop-color="#C9A227"/>
+      <stop offset="0.7" stop-color="#A67C2D"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+  <!-- Left stem -->
+  <rect x="8" y="8" width="14" height="104" rx="1.5" fill="url(#gold)"/>
+  <!-- Right stem -->
+  <rect x="58" y="8" width="14" height="104" rx="1.5" fill="url(#gold)"/>
+  <!-- Wave crossbar -->
+  <path d="M14 52 C28 40, 40 40, 46 52 C52 64, 58 64, 66 52 L66 66 C58 78, 52 78, 46 66 C40 54, 28 54, 14 66 Z" fill="url(#gold)"/>
+</svg>
