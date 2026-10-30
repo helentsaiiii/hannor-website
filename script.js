@@ -3,7 +3,7 @@
 
   const i18n = {
     en: {
-      "nav.spirit": "Name",
+      "nav.spirit": "About",
       "nav.services": "Services",
       "nav.setup": "Set up",
       "setup.label": "One-Stop Admin Support",
@@ -67,32 +67,24 @@
       "spirit.quote": "“The ocean remains vast because it welcomes every river.”",
       "spirit.body": "Just as the ocean gathers diverse streams, Hannor brings top-tier talent into the right corporate currents, driving growth for both the people and the companies we serve.",
       "services.label": "Our services",
-      "services.title": "From talent map to first payday, end to end",
-      "services.s1.pillar": "MAP",
-      "services.s1.title": "Talent Mapping",
-      "services.s1.a": "Target company and competitor mapping",
-      "services.s1.b": "Team structure and talent pool insight",
-      "services.s1.c": "Data-driven hiring strategy",
-      "services.s2.pillar": "HIRE",
-      "services.s2.badge": "CORE",
-      "services.s2.title": "Recruitment & Interview",
-      "services.s2.a": "Talent search",
-      "services.s2.b": "Candidate screening and qualification",
-      "services.s2.c": "Interview arrangement and feedback",
-      "services.s2.d": "Offer letter negotiation",
-      "services.s2.e": "Candidate onboarding support",
-      "services.s3.pillar": "PAY",
-      "services.s3.title": "Payroll & EOR",
-      "services.s3.a": "Employer of Record (EOR) services",
-      "services.s3.b": "Local salary payment in Taiwan for overseas companies",
-      "services.s4.pillar": "SET UP",
-      "services.s4.title": "One-Stop Admin Support",
-      "services.s4.a": "Taiwan setup for overseas companies",
-      "services.s4.b": "Business registration",
-      "services.s4.c": "Payroll administration",
-      "services.s4.d": "Company policies and regulations",
-      "services.s4.e": "Legal support, tailored to your needs",
-      "process.label": "How we work",
+      "services.title": "Two ways we partner with you in Taiwan",
+      "services.lead": "Talent search and one-stop landing support — equal focus, one team.",
+      "services.s1.pillar": "HIRE",
+      "services.s1.title": "Talent search",
+      "services.s1.tag": "Semiconductor & hi-tech recruiting",
+      "services.s1.a": "Market mapping and talent search",
+      "services.s1.b": "Screening, interviews, and offer close",
+      "services.s1.c": "Semiconductor and hi-tech focus",
+      "services.s1.d": "From engineers to leadership roles",
+      "services.s2.pillar": "ONE-STOP",
+      "services.s2.title": "Land & operate in Taiwan",
+      "services.s2.tag": "EOR · entity · payroll & admin",
+      "services.s2.a": "Employer of Record — hire and pay before your entity is ready",
+      "services.s2.b": "Taiwan entity — registration, tax, banking, capital verification",
+      "services.s2.c": "Payroll, labor & health insurance, bookkeeping and tax filing",
+      "services.s2.d": "One package, one point of contact after go-live",
+      "services.note": "Need people before the entity is ready? Start with EOR → hire → move staff to your own entity.",
+      "process.label":      "process.label":      "process.label": "How we work",
       "process.title": "From first brief to first day",
       "process.t1.time": "1 session",
       "process.t1.title": "Discovery call",
@@ -139,17 +131,26 @@
       "team.c4.title": "Professional Consultant",
       "team.c4.a": "7 years of hands-on experience as an R&D engineer",
       "team.c4.b": "Technical insight and advisory for engineering roles",
-      "contact.thanks": "Thank you",
-      "contact.label": "Thank you",
+      "contactus.title": "Contact",
+      "contactus.lead": "Tell me a bit about your situation and I’ll get back to you within one business day.",
+      "contactus.first": "First Name",
+      "contactus.last": "Last Name",
+      "contactus.email": "Email",
+      "contactus.company": "Company",
+      "contactus.need": "What do you need?",
+      "contactus.message": "Message",
+      "contactus.send": "Send message",
+      "contact.thanks": "Get in touch",
+      "contact.label": "Get in touch",
       "contact.role": "Founder & Managing Consultant",
       "contact.mail": "Mail",
       "contact.phone": "Phone",
-      "contact.cta": "Email Helen",
+      "contact.cta": "Email Hannor",
       "footer.rights": "All rights reserved.",
       "footer.top": "Back to top"
     },
     zh: {
-      "nav.spirit": "名稱精神",
+      "nav.spirit": "關於我們",
       "nav.services": "服務項目",
       "nav.setup": "行政落地",
       "setup.label": "一站式行政支援",
@@ -213,32 +214,24 @@
       "spirit.quote": "「海納百川，有容乃大。」",
       "spirit.body": "正如大海匯聚百川，Hannor 將頂尖人才導入適合的企業潮流，為人才與企業共同創造成長。",
       "services.label": "我們的服務",
-      "services.title": "從人才地圖到第一份薪資，一站式完成",
-      "services.s1.pillar": "MAP",
-      "services.s1.title": "人才地圖 Talent Mapping",
-      "services.s1.a": "目標公司與競爭對手人才盤點",
-      "services.s1.b": "團隊結構與人才庫洞察",
-      "services.s1.c": "數據驅動的招募策略",
-      "services.s2.pillar": "HIRE",
-      "services.s2.badge": "CORE",
-      "services.s2.title": "招募與面試",
-      "services.s2.a": "人才搜尋",
-      "services.s2.b": "候選人篩選與資格評估",
-      "services.s2.c": "面試安排與回饋",
-      "services.s2.d": "錄取條件談判",
-      "services.s2.e": "到職輔導支援",
-      "services.s3.pillar": "PAY",
-      "services.s3.title": "薪資代付與 EOR",
-      "services.s3.a": "雇主紀錄服務（Employer of Record）",
-      "services.s3.b": "為海外公司提供台灣本地薪資代付",
-      "services.s4.pillar": "SET UP",
-      "services.s4.title": "一站式行政支援",
-      "services.s4.a": "海外公司台灣設立支援",
-      "services.s4.b": "公司登記",
-      "services.s4.c": "薪資行政",
-      "services.s4.d": "公司政策與法規",
-      "services.s4.e": "依需求提供法律支援",
-      "process.label": "合作流程",
+      "services.title": "兩大同等重要的合作方式",
+      "services.lead": "人才搜尋與一站式落地支援，同等重視、同一團隊。",
+      "services.s1.pillar": "HIRE",
+      "services.s1.title": "人才搜尋／獵才",
+      "services.s1.tag": "半導體與高科技招募",
+      "services.s1.a": "市場盤點與人才搜尋",
+      "services.s1.b": "篩選、面試與談定 offer",
+      "services.s1.c": "聚焦半導體與高科技",
+      "services.s1.d": "從工程師到高階主管",
+      "services.s2.pillar": "ONE-STOP",
+      "services.s2.title": "台灣落地與營運一站式",
+      "services.s2.tag": "EOR · 公司設立 · 薪資與行政",
+      "services.s2.a": "EOR：公司尚未設立前即可在台雇用與發薪",
+      "services.s2.b": "台灣公司設立：登記、稅務、銀行、驗資",
+      "services.s2.c": "月薪、勞健保、記帳與報稅",
+      "services.s2.d": "一站打包、上線後單一窗口",
+      "services.note": "還沒有公司主體也要先用人？先走 EOR → 獵才 → 再轉入自有實體。",
+      "process.label":      "process.label":      "process.label": "合作流程",
       "process.title": "從第一場簡報到到職日",
       "process.t1.time": "1 場",
       "process.t1.title": "探索諮詢",
@@ -285,12 +278,21 @@
       "team.c4.title": "專業顧問",
       "team.c4.a": "7 年研發工程師實務經驗",
       "team.c4.b": "為工程職缺提供技術洞察與顧問",
-      "contact.thanks": "謝謝您",
-      "contact.label": "謝謝您",
+      "contactus.title": "聯絡我們",
+      "contactus.lead": "簡單告訴我你的情況，我會在一個工作天內回覆你。",
+      "contactus.first": "名字",
+      "contactus.last": "姓氏",
+      "contactus.email": "Email",
+      "contactus.company": "公司",
+      "contactus.need": "你需要什麼？",
+      "contactus.message": "訊息",
+      "contactus.send": "送出訊息",
+      "contact.thanks": "聯絡我們",
+      "contact.label": "聯絡我們",
       "contact.role": "創辦人暨管理顧問",
       "contact.mail": "郵件",
       "contact.phone": "電話",
-      "contact.cta": "寄信給 Helen",
+      "contact.cta": "寄信給 Hannor",
       "footer.rights": "版權所有。",
       "footer.top": "回到頂端"
     }
@@ -318,9 +320,8 @@
     });
   });
 
-  var saved = null;
-  try { saved = localStorage.getItem("hannor-lang"); } catch (e) { /* ignore */ }
-  if (saved === "zh" || saved === "en") applyLang(saved);
+  // Always open in English for international clients; 繁中 still available via toggle
+  applyLang("en");
 
   // Sticky header shadow
   var header = document.querySelector(".site-header");
@@ -346,4 +347,30 @@
       });
     });
   }
+
+  // Contact form → mailto
+  var form = document.getElementById("contact-form");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var first = (form.first_name && form.first_name.value || "").trim();
+      var last = (form.last_name && form.last_name.value || "").trim();
+      var email = (form.email && form.email.value || "").trim();
+      var company = (form.company && form.company.value || "").trim();
+      var need = (form.need && form.need.value || "").trim();
+      var message = (form.message && form.message.value || "").trim();
+      if (!email) return;
+      var subject = "Hannor website inquiry";
+      var body = [
+        "Name: " + [first, last].filter(Boolean).join(" "),
+        "Email: " + email,
+        "Company: " + company,
+        "Need: " + need,
+        "",
+        message
+      ].join("\n");
+      window.location.href = "mailto:helen.tsai@hannortw.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  }
+
 })();
