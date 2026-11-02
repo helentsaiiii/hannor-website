@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hannor-consulting.hannortw.com/sitemap.xml
