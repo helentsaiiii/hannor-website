@@ -185,7 +185,7 @@ h1, h2, h3, h4 {
   margin-inline: auto;
 }
 .hero-mark {
-  width: clamp(160px, 22vw, 240px);
+  width: clamp(72px, 9.9vw, 108px);
   height: auto;
   border-radius: 0;
   background: transparent;
@@ -814,7 +814,7 @@ h1, h2, h3, h4 {
   .process-meta { flex-direction: row; align-items: center; }
   .process-step { padding-left: 1.75rem; }
   .founder-card { grid-template-columns: 1fr; }
-  .hero-inner { grid-template-columns: auto 1fr; gap: 1.5rem; }
+  .hero-inner { grid-template-columns: 1fr; gap: 1.25rem; }
   .hero-divider { display: none; }
 }
 @media (max-width: 820px) {
@@ -833,7 +833,7 @@ h1, h2, h3, h4 {
   .services-grid { grid-template-columns: 1fr; }
   .hero { min-height: auto; padding: 3.5rem 0 3.5rem; }
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-mark { width: 96px; }
+  .hero-mark { width: 43px; }
   .section { padding: 3.5rem 0; }
   .section-spirit { padding-block: 4rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 0; }
